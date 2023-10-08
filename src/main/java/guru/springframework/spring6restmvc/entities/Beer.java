@@ -60,6 +60,7 @@ public class Beer {
     @OneToMany(mappedBy = "beer")
     private Set<BeerOrderLine> beerOrderLines;
 
+    @Builder.Default
     @ManyToMany
     @Builder.Default
     @JoinTable(name = "beer_category",

@@ -17,16 +17,26 @@ class CategoryRepositoryTest {
 
     @Autowired
     BeerRepository beerRepository;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 107-rel-one-to-one
     Beer testBeer;
 
     @BeforeEach
     void setUp() {
         testBeer = beerRepository.findAll().get(0);
     }
+<<<<<<< HEAD
     @Transactional
     @Test
     void testAddCategory(){
+=======
+
+    @Transactional
+    @Test
+    void testAddCategory() {
+>>>>>>> 107-rel-one-to-one
         Category savedCat = categoryRepository.save(Category.builder()
                         .description("Ales")
                 .build());
@@ -35,12 +45,17 @@ class CategoryRepositoryTest {
         Beer saveBeer = beerRepository.save(testBeer);
 
         System.out.println(saveBeer.getBeerName());
+<<<<<<< HEAD
+=======
+
+>>>>>>> 107-rel-one-to-one
     }
 }
 
 
 
 
+<<<<<<< HEAD
 
 
 
@@ -52,3 +67,5 @@ class CategoryRepositoryTest {
 
 
 
+=======
+>>>>>>> 107-rel-one-to-one

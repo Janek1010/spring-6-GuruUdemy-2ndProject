@@ -13,6 +13,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.UUID;
 
+@Builder
 @Getter
 @Setter
 @NoArgsConstructor
@@ -40,6 +41,7 @@ public class Category {
 
     private String description;
 
+    @Builder.Default
     @ManyToMany
     @Builder.Default
     @JoinTable(name = "beer_category",
